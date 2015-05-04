@@ -11,7 +11,7 @@ namespace BeMyGuest.Models
     public class UsersContext : DbContext
     {
         public UsersContext()
-            : base("DefaultConnection")
+            : base("aspnet-BeMyGuest-20150425021944")
         {
         }
 
