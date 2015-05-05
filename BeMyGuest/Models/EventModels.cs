@@ -19,8 +19,11 @@ namespace BeMyGuest.Models
 
         public DbSet<Event> Events { get; set; }
     }
+    [Table("Event")]
     public class Event
     {
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public DateTime data { get; set; }
         public int id_user_guest { get; set; }
