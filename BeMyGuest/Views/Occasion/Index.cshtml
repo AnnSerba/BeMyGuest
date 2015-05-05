@@ -12,6 +12,15 @@
 <table>
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.IdUserTraveler)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdUserHost)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Status)
         </th>
         <th></th>
@@ -19,6 +28,15 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdUserTraveler)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdUserHost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Status)
         </td>
